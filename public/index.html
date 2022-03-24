@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./assets/styles/main.scss"> -->
+  <!-- <link rel="stylesheet" href="./assets/styles/main.css"> -->
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/main.scss">
+
+</head>
+
+<body>
+  <script src="bundle.js"></script>
+  <header>
+
+
+    <a href=""> <img class="logo" src="assets/img/developpeuse-web.jpg" alt=""></a>
+
+    <nav>
+
+      <label for="toggle">☰</label>
+      <input type="checkbox" id="toggle">
+
+      <div class="main_pages">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#competences">Compétences</a>
+        <a href="#services">Services</a>
+        <a href="#apropos">Apropos</a>
+        <a href="#contact">contact</a>
+      </div>
+    </nav>
+
+  </header>
+  <main id="portfolio">
+
+
+    <h1 class="ml2">Developpeur web <br>
+      et web mobile
+    </h1>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+
+      var textWrapper = document.querySelector('.ml2');
+      textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+      anime.timeline({ loop: true })
+        .add({
+          targets: '.ml2 .letter',
+          scale: [4, 1],
+          opacity: [0, 1],
+          translateZ: 3,
+          easing: "easeOutExpo",
+          duration: 950,
+          delay: (el, i) => 90 * i
+        }).add({
+          targets: '.ml2',
+          opacity: 0,
+          duration: 1,
+          easing: "easeOutExpo",
+          delay: 90000
+        });
+    </script>
+
+    </section>
+
+
+
+
+
+
+  </main>
+
+
+  <section id="competences">
+    <h1>Mes Compétences</h1>
+    <h2>Des compétences à votre service</h2>
+    <h3>Compétences en développement</h3>
+
+    <div id="SkillBox">
+
+      <div class="SkillBar">
+        <div id="Skill-HTML">
+          <span class="Skill-Area ">HTML</span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+      <div class="SkillBar">
+        <div id="Skill-CSS">
+          <span class="Skill-Area ">CSS/CSS3</span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+      <div class="SkillBar">
+        <div id="Skill-jQuery">
+          <span class="Skill-Area ">Bootstrap</span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+      <div class="SkillBar">
+        <div id="Skill-JS">
+          <span class="Skill-Area ">Javascript</span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+
+
+      <div class="SkillBar">
+        <div id="Skill-PHP">
+          <span class="Skill-Area ">Vue.js </span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+
+
+      <div class="SkillBar">
+        <div id="Skill-vue">
+          <span class="Skill-Area ">PHP </span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+      <div class="SkillBar">
+        <div id="Skill-SQL">
+          <span class="Skill-Area ">SQL </span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+      <div class="SkillBar">
+        <div id="Skill-react">
+          <span class="Skill-Area ">React</span>
+          <span class="PercentText "></span>
+        </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+
+
+    <div>
+      <h2>Des solutions adaptées à votre domaine d'activité !</h>
+    </div>
+
+
+
+
+
+  </section>
+  <br>
+  <br>
+  <section id="services">
+    <h1>Mes Services</h>
+      <h2>Des prestations adaptées à vos besoins</h2>
+
+
+
+      <div class="container2">
+
+        <div class='hexagon'>
+
+          <div class='hexagon-inside'>
+            <div class='hexagon1-content'>
+              <div class="image-hover-text">
+                <div class="image-hover-text-bubble">
+                  <span class="image-hover-text-title">Web</span>
+                  Creation des sites web sur mesure
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <div class='hexagon'>
+          <div class='hexagon-inside'>
+            <div class='hexagon2-content'>
+
+              <div class="image-hover-text">
+                <div class="image-hover-text-bubble">
+                  <span class="image-hover-text-title">Wordpress</span>
+                  Mise en place / Modification / Gestion de CMS
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class='hexagon'>
+          <div class='hexagon-inside'>
+            <div class='hexagon3-content'>
+
+              <div class="image-hover-text">
+                <div class="image-hover-text-bubble">
+                  <span class="image-hover-text-title">Mobile</span>
+                  Développement applications mobile
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='hexagon'>
+          <div class='hexagon-inside'>
+            <div class='hexagon4-content'>
+
+              <div class="image-hover-text">
+                <div class="image-hover-text-bubble">
+                  <span class="image-hover-text-title">Sites</span>
+                  Refonte des Sites
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+  </section>
+
+  <section id="apropos"></section>
+
+  <h1>A PROPOS</h1>
+
+  <h2>
+    Je suis développeuse web et j'aime ça !
+  </h2>
+  <section id="contact">
+    <h1>Contactez-moi</h1>
+    <div class="contacts">
+      <div>
+
+        <form>
+          <input placeholder="Nom" type="text" />
+          <input placeholder="E-mail" type="text" />
+          <input placeholder="Téléphone" type="text" />
+          <br>
+
+
+          <label for="msg">Message</label>
+          <textarea id="msg" name="user_message"></textarea>
+          <br>
+
+          <button>Envoyer</button>
+
+        </form>
+      </div>
+      <div class="coordonnees">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Neque quibusdam delectus ipsum in obcaecati nam tempore
+        assumenda vitae provident sit
+        . Placeat doloribus quaerat facere ullam quos atque? Ullam,
+        nisi obcaecati.
+      </div>
+    </div>
+  </section>
+
+  <script src="../src/index.js"></script>
+</body>
+
+</html>
